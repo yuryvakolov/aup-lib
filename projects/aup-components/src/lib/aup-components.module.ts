@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { AupComponentsComponent } from './aup-components.component';
-import { AupButtonComponent } from './aup-button/aup-button.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
 @NgModule({
   declarations: [
     AupComponentsComponent,
-    AupButtonComponent,
+    ButtonComponent,
   ],
   imports: [
   ],
