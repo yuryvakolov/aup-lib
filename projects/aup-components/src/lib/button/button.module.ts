@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AupButtonComponent } from "./aup-button.component";
+import { ButtonComponent } from "./button.component";
 
 
 
 @NgModule({
-  declarations: [AupButtonComponent],
+  declarations: [ButtonComponent],
   imports: [
     CommonModule
   ]
 })
-export class AupButtonModule { }
+export class ButtonModule { }
