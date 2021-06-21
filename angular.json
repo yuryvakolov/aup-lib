@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "aup-components": {
+      "projectType": "library",
+      "root": "projects/aup-components",
+      "sourceRoot": "projects/aup-components/src",
+      "prefix": "aup",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/aup-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/aup-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/aup-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/aup-components/src/test.ts",
+            "tsConfig": "projects/aup-components/tsconfig.spec.json",
+            "karmaConfig": "projects/aup-components/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "aup-components"
 }
